@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sourav Ray Mandal | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+   <img src="win1.jpg" alt="Profile Picture" id="profile-pic" />
+  <h1 id="typing-name">Sourav Ray Mandal</h1>
+    <p>MCA Student | Software Developer</p>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Motivated MCA student with foundational experience in software development and AI projects.
+      Proficient in C, Java, HTML, and MySQL with a passion for hands-on learning and real-world tech applications.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Python</li>
+      <li>Java</li>
+      <li>C</li>
+      <li>HTML</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Infinitia</h3>
+      <p>AI tool to convert sign language to text.</p>
+      <a href="https://github.com/TSPADBU/Infinitia/tree/main2" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Secure ID Nexus</h3>
+      <p>Facial recognition attendance system using OpenCV.</p>
+      <!-- Dummy link, replace with real if you host -->
+      <a href="#" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form" method="POST" action="/submit">
+  <input type="text" id="name" name="name" placeholder="Your Name" required>
+  <input type="email" id="email" name="email" placeholder="Your Email" required>
+  <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p> 2025 | Sourav Ray Mandal | <span id="datetime"></span></p>
+  </footer>
+</body>
+</html>
