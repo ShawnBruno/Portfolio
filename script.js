@@ -46,6 +46,6 @@ form.addEventListener('submit', function (e) {
     alert("Please enter a valid email.");
   } else {
     alert("Message sent successfully! (Please wait for me to contact you 20:57 13-04-2025)");
-    form.reset();
+    setTimeout(() => form.submit(), 500);
   }
 });
