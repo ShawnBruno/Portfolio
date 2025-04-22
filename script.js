@@ -44,8 +44,5 @@ form.addEventListener('submit', function (e) {
   } else if (!email.includes("@") || !email.includes(".")) {
     e.preventDefault(); // prevent actual form submission
     alert("Please enter a valid email.");
-  } else {
-    alert("Message sent successfully! (Please wait for me to contact you 20:57 13-04-2025)");
-    setTimeout(() => form.submit(), 500);
-  }
+  } 
 });
