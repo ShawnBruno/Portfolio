@@ -33,14 +33,16 @@ typeWriter();
 // 4. Contact Form Validation
 const form = document.getElementById('contact-form');
 form.addEventListener('submit', function (e) {
-  e.preventDefault(); // prevent actual form submission
+  
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
   const message = document.getElementById('message').value.trim();
 
   if (name === "" || email === "" || message === "") {
+    e.preventDefault(); // prevent actual form submission
     alert("Please fill out all fields.");
   } else if (!email.includes("@") || !email.includes(".")) {
+    e.preventDefault(); // prevent actual form submission
     alert("Please enter a valid email.");
   } else {
     alert("Message sent successfully! (Please wait for me to contact you 20:57 13-04-2025)");
